@@ -1,0 +1,31 @@
+<md-card class="child-card">
+  <form #form="ngForm" novalidate>
+    <md-list class="grid">
+      <md-list-item class="fullWidth header">
+        <div fxFlex="grow">Period</div>
+        <div fxFlex="grow">Gross Income</div>
+        <div fxFlex="grow">Tax Income</div>
+        <div fxFlex="grow">Net Income</div>
+        <div fxFlex="grow">Pension</div>
+        <div fxFlex="grow">
+          <a md-mini-fab (click)="onViewAddPayslipClicked()">
+            <md-icon>add</md-icon>
+          </a>
+        </div>
+      </md-list-item>
+      <md-list-item *ngFor="let paySlip of paySlips" class="fullWidth  textCentered">
+        <div fxFlex="grow">{{paySlip.payPeriod}}</div>
+        <div fxFlex="grow">{{paySlip.grossIncome| number|money}}</div>
+        <div fxFlex="grow">{{paySlip.incomeTax | number|money}}</div>
+        <div fxFlex="grow">{{paySlip.netIncome | number|money}}</div>
+        <div fxFlex="grow">{{paySlip.pension | number|money}}</div>
+        <div fxFlex="grow">
+          <a md-mini-fab (click)="onViewPayslipClicked(paySlip)">
+            <md-icon>receipt</md-icon>
+          </a>
+        </div>
+      </md-list-item>
+    </md-list>
+
+  </form>
+</md-card>

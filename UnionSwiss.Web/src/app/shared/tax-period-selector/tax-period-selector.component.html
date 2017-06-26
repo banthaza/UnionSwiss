@@ -1,0 +1,16 @@
+<form #form="ngForm" novalidate>
+  <h2 md-dialog-title>New Payment Period Start Date</h2>
+  <md-dialog-content>
+    <md-input-container>
+      <input mdInput [mdDatepicker]="picker1" placeholder="Choose Start date" [(ngModel)]="createPaySlipMessage.newPeriodDate"
+        name="createPaySlipMessage.newPeriodDate">
+      <button mdSuffix [mdDatepickerToggle]="picker1"></button>
+    </md-input-container>
+    <md-datepicker #picker1 [touchUi]="touch" [startAt]="startAt" [startView]="yearView ? 'year' : 'month'">
+      ></md-datepicker>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <button md-button md-dialog-close>Cancel</button>
+    <button md-button [md-dialog-close]="createPaySlipMessage">Create</button>
+  </md-dialog-actions>
+</form>

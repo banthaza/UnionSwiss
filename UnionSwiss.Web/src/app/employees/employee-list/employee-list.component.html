@@ -1,0 +1,42 @@
+<md-card class="card">
+  <md-card-header class="header">
+    <md-card-title>
+      <h1>Employees</h1>
+    </md-card-title>
+    <md-card-subtitle></md-card-subtitle>
+    <span class="spacer"></span>
+  </md-card-header>
+  <md-card-content>
+    <div class="content">
+      <md-list class="grid">
+        <md-list-item class="fullWidth header">
+          <div fxFlex="grow">First Name</div>
+          <div fxFlex="grow">Last Name</div>
+          <div fxFlex="grow">Anual Salary</div>
+          <div fxFlex="grow">Pension Contribution %</div>
+          <div fxFlex="grow">Start Date</div>
+          <div fxFlex="grow">
+            <a md-mini-fab (click)="onAddClicked()">
+              <md-icon>add</md-icon>
+            </a>
+          </div>
+        </md-list-item>
+        <md-list-item *ngFor="let employee of employees" class="fullWidth textCentered">
+          <div fxFlex="grow">{{employee.firstName}}</div>
+          <div fxFlex="grow">{{employee.lastName}}</div>
+          <div fxFlex="grow">{{employee.annualSalary |number|money}}</div>
+          <div fxFlex="grow">{{employee.pensionContributionPercentage |percentInt}}</div>
+          <div fxFlex="grow">{{employee.startDate}}</div>
+          <div fxFlex="grow">
+            <a md-mini-fab>
+              <md-icon (click)="onEditClicked(employee)">edit</md-icon>
+            </a>
+          </div>
+        </md-list-item>
+      </md-list>
+    </div>
+  </md-card-content>
+  <md-card-actions class="footer">
+
+  </md-card-actions>
+</md-card>

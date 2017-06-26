@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.fullWidth{
+  width: 100%;
+}
+
+.header{
+  text-align: center;
+  border-bottom: 1px solid #673AB7;
+}
+
+.footer{
+  border-top: 1px solid #673AB7;
+    padding: 16px 0px 16px 0px;
+    margin: 0px 16px 0px 16px;
+}
+.content{
+  padding: 16px 0px 0px 0px;
+}
+.grid{
+  padding: 4px 0px 0px 0px;
+}
+
+.textCentered{
+    text-align: center;
+}
+
+.textRight{
+    text-align: right;
+}
+

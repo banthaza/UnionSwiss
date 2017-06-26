@@ -1,0 +1,27 @@
+<md-card class="card">
+  <md-card-header class="header">
+    <md-card-title>
+      <h1>Admin</h1>
+    </md-card-title>
+    <md-card-subtitle></md-card-subtitle>
+    <span class="spacer"></span>
+  </md-card-header>
+  <md-card-content class="content">
+    <md-list>
+      <md-list-item class="fullWidth header">
+        <div fxFlex="grow">Financial Year</div>
+        <div fxFlex="grow">
+          <a md-mini-fab (click)="onAddFinancialYearClicked()">
+            <md-icon>add</md-icon>
+          </a>
+        </div>
+      </md-list-item>
+      <md-list-item *ngFor="let taxYear of taxYears">
+        <div fxFlex="grow">{{taxYear.name}}</div>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+  <md-card-actions class="footer">
+
+  </md-card-actions>
+</md-card>

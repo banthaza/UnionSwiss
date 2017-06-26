@@ -1,0 +1,32 @@
+<h2 md-dialog-title>
+  {{paySlip.fullName}} : {{ paySlip.payPeriod }}
+</h2>
+<md-dialog-content>
+  <div class="payslip">
+    <md-list>
+      <md-list-item>
+        <div>Gross Income</div>
+        <div class="spacer"></div>
+        <div class="textRight">{{paySlip.grossIncome|number|money}}</div>
+      </md-list-item>
+      <md-list-item>
+        <div>Income Tax</div>
+        <div class="spacer"></div>
+        <div>{{paySlip.incomeTax|number|money}}</div>
+      </md-list-item>
+      <md-list-item>
+        <div>Net Income</div>
+        <div class="spacer"></div>
+        <div class="textRight">{{paySlip.netIncome|number|money}}</div>
+      </md-list-item>
+      <md-list-item>
+        <div>Pension Contribution</div>
+        <div class="spacer"></div>
+        <div class="textRight">{{paySlip.pension|number|money}}</div>
+      </md-list-item>
+    </md-list>
+  </div>
+</md-dialog-content>
+<md-dialog-actions>
+  <button md-button [md-dialog-close]="true">Close</button>
+</md-dialog-actions>

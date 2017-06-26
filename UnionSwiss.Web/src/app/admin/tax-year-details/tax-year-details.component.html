@@ -1,0 +1,49 @@
+<h2 md-dialog-title>
+  Create new Tax year {{newYearsDay|date}}
+</h2>
+<md-dialog-content>
+  <form #form="ngForm" novalidate>
+    <md-list class="grid">
+      <md-list-item class="fullWidth header">
+        <div fxFlex="grow">Min Qualifying Value</div>
+        <div fxFlex="grow">Max Qualifying Value</div>
+        <div fxFlex="grow">Base Tax Value</div>
+        <div fxFlex="grow">Increment Multiplier</div>
+        <div fxFlex="grow" item-width="50px">
+          <a md-mini-fab (click)="onAddNewBracketClicked()">
+            <md-icon>add</md-icon>
+          </a>
+        </div>
+      </md-list-item>
+      <md-list-item *ngFor="let bracket of taxBrackets ; let i=index" class="fullWidth  textCentered">
+        <div fxFlex="grow">
+          <md-input-container class="fullWidth">
+            <input mdInput [(ngModel)]="bracket.minQualifyingValue" name="bracket.minQualifyingValue{{i}}" type="number" />
+          </md-input-container>
+        </div>
+        <div fxFlex="grow">
+          <md-input-container class="fullWidth">
+            <input mdInput [(ngModel)]="bracket.maxQualifyingValue" name="bracket.maxQualifyingValue{{i}}" type="number" />
+          </md-input-container>
+        </div>
+        <div fxFlex="grow">
+          <md-input-container class="fullWidth">
+            <input mdInput [(ngModel)]="bracket.baseTaxValue" name="bracket.baseTaxValue{{i}}" type="number" />
+          </md-input-container>
+        </div>
+        <div fxFlex="grow">
+          <md-input-container class="fullWidth">
+            <input mdInput [(ngModel)]="bracket.incrementMultiplier" name="bracket.incrementMultiplier{{i}}" type="number" />
+          </md-input-container>
+        </div>
+        <div fxFlex="grow" item-width="50px"></div>
+
+      </md-list-item>
+    </md-list>
+
+  </form>
+
+</md-dialog-content>
+<md-dialog-actions>
+  <button md-button [md-dialog-close]="true">Close</button>
+</md-dialog-actions>
