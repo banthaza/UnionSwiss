@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="928429d6-5211-4c31-9ecb-4d5a5ca6f9bb" ChangeDateTime="06/24/2017 10:48:39">
+    <Property Name="ElementName" Value="[HR].[EmployeePayslip].[Netincome]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[HR].[EmployeePayslip]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NetIncome" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3a42bbeb-3d27-4034-b4c2-3f6c3466be8b" ChangeDateTime="06/24/2017 10:59:53">
+    <Property Name="ElementName" Value="[dbo].[TaxBrackets].[Mi]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaxBrackets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MinQualifyingValue" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4704753b-5e37-40f5-8147-31542611a172" ChangeDateTime="06/24/2017 11:01:07">
+    <Property Name="ElementName" Value="[dbo].[TaxYear].[Startdate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaxYear]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3cfde239-b452-4fcd-97bf-ee56e379f5c6" ChangeDateTime="06/24/2017 11:01:17">
+    <Property Name="ElementName" Value="[dbo].[TaxYear].[StartDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaxYear]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PeriodStartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f42d231d-31dc-4039-8112-1786648aedc5" ChangeDateTime="06/24/2017 13:34:31">
+    <Property Name="ElementName" Value="[HR].[Employees].[AnualSalary]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[HR].[Employees]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AnnualSalary" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d9e5993d-4224-48e7-8caf-2de7f8fa2c45" ChangeDateTime="06/25/2017 10:27:37">
+    <Property Name="ElementName" Value="[Finance].[TaxBrackets].[BaseValue]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Finance].[TaxBrackets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BaseTaxValue" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b7e51b8a-3d9d-4b04-b25e-0c464cade954" ChangeDateTime="06/25/2017 10:55:31">
+    <Property Name="ElementName" Value="[Finance].[TaxYears].[PeriodStartDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Finance].[TaxYears]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8d28d19b-dcbc-4326-9d09-e48b4b35a190" ChangeDateTime="06/25/2017 10:55:44">
+    <Property Name="ElementName" Value="[Finance].[TaxYears].[PeriodEndDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Finance].[TaxYears]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EndDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="96e2eae2-8352-411f-821b-d9cb87e8e1f9" ChangeDateTime="06/25/2017 15:07:33">
+    <Property Name="ElementName" Value="[HR].[EmployeePayslips].[Tax]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[HR].[EmployeePayslips]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IncomeTax" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e785738e-f0d2-4efb-b82f-daf9132c52ff" ChangeDateTime="06/25/2017 15:07:48">
+    <Property Name="ElementName" Value="[HR].[EmployeePayslips].[TaxPeriod]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[HR].[EmployeePayslips]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PayPeriod" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d00b3dcc-622b-4970-ad22-3f6d449660b9" ChangeDateTime="06/25/2017 15:07:59">
+    <Property Name="ElementName" Value="[HR].[EmployeePayslips].[PensionContribution]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[HR].[EmployeePayslips]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pension" />
+  </Operation>
+</Operations>
